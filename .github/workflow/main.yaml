@@ -1,0 +1,12 @@
+  
+name: A workflow for my Hello World file
+on: [push, pull_request]
+
+defaults:
+  run:
+    shell: bash
+jobs:
+  Hello_World:
+    name: Hello world action
+    runs-on: ubuntu-latest
+    run: "Hello World"
