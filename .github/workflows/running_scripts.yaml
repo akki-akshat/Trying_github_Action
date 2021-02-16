@@ -10,9 +10,8 @@ jobs:
     name: Running Script on Ubuntu
     runs-on: ubuntu-latest
     steps:
-      - run: ls -R ..
-  Script_Mac:
-    name: Running script on MAC
-    runs-on: macos-11.0
-    steps:
-      - run: ls -R ..
+      - uses: actions/checkout@v2
+      - run: |
+          ls -R ..
+          chmod + ./scripts/main.sh
+          ./scripts/main.sh
