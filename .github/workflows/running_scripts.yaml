@@ -10,9 +10,9 @@ jobs:
     name: Running Script on Ubuntu
     runs-on: ubuntu-latest
     steps:
-      - run: ./scripts/main.sh
+      - run: ls -R /
   Script_Mac:
     name: Running script on MAC
     runs-on: macos-11.0
     steps:
-      - run: ./scripts/main.sh
+      - run: ls -R /
