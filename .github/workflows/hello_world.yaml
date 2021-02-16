@@ -6,8 +6,14 @@ defaults:
   run:
     shell: bash
 jobs:
-  Hello_World:
-    name: Hello world action
+  Script_Ubuntu:
+    name: Running Script on Ubuntu
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World!!!"
+      - uses: ./scripts
+      - run: main.sh
+  Script_Mac:
+    name: Running script on MAC
+    runs-on: macos-11.0
+    steps:
+      - run: ./scripts/main.sh
