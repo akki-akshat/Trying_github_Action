@@ -12,5 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
+          pwd
           ls -R
+          chmod +x ./scripts/main.sh 
           ./scripts/main.sh
